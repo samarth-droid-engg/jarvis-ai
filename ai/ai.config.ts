@@ -2,7 +2,7 @@ import { createOpenRouter } from "@openrouter/ai-sdk-provider";
 
 export function getAgentModel() {
   const apiKey = process.env.OPENROUTER_API_KEY;
-  if (!apiKey) throw new Error("OPENROUTER_API_KEY is not set");
+  if (!apiKey) throw new Error  ("OPENROUTER_API_KEY is not set");
 
   const provider = createOpenRouter({ apiKey });
 
